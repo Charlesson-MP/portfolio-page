@@ -1,0 +1,62 @@
+:root {
+    --header-background-color: #171F26;
+    --color2: #405059;
+    --color3: #DDF2AE;
+    --color4: #F7F0E8;
+    --color5: #080004;
+}
+
+/* html settings */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+/* body settings */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color5);
+    color: var(--color4);
+}
+
+/* header settings */
+header {
+    background-color: var(--header-background-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0.125rem 0.125rem 0.25rem rgba(255, 255, 255, 0.507);
+}
+
+/* menu settings */
+header nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+/* menu items settings */
+header nav ul li {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* menu links settings */
+header nav ul li a {
+    color: var(--color4);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+header nav ul li a:hover {
+    background-color: var(--color3);
+    color: var(--color5);
+}
+
