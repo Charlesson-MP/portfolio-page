@@ -40,19 +40,25 @@ nav.menu {
 }
 
 nav.menu span {
+    padding: .3rem;
+    border-radius: .3rem;
     font-size: 2rem;
     cursor: pointer;
 }
 
+nav.menu span:hover {
+    background-color: var(--color2);
+}
+
 nav.menu ul {
+    display: none;
+    flex-direction: column;
+    gap: .6rem;
     width: 9rem;
     position: absolute;
     top: 2.5rem;
     left: -5rem;
     list-style: none;
-    display: none;
-    flex-direction: column;
-    gap: .6rem;
     background-color: var(--header-background-color);
 }
 
