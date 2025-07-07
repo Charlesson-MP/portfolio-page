@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <title>Charlesson-MP</title>
 </head>
 <body>
     <header>
         <img src="./src/images/logo-header.png" alt="Logo Charlesson-MP" class="logo-header">
-        <nav>
-            <ul>
+        <nav class="menu">
+            <span class="material-symbols-outlined" id="btnMenu">menu</span>
+            <ul id="menuList">
                 <li><a href="">Inicio</a></li>
                 <li><a href="">Sobre mim</a></li>
                 <li><a href="">Habilidades</a></li>
@@ -20,5 +22,14 @@
             </ul>
         </nav>
     </header>
+    <script>
+        const btnMenu = document.getElementById("btnMenu");
+        const menuList = document.getElementById("menuList");
+
+        btnMenu.addEventListener('click', () => {
+            console.log('Olá');
+            menuList.style.display = "flex";
+        });
+    </script>
 </body>
 </html>

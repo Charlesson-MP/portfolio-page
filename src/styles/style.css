@@ -26,7 +26,7 @@ header {
     top: 0;
     width: 100%;
     height: 5rem;
-    padding: 1rem 5rem;
+    padding: 1rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,29 +34,35 @@ header {
 }
 
 /* menu settings */
-header nav ul {
+nav.menu {
     display: flex;
-    gap: 1.5rem;
+    position: relative;
+}
+
+nav.menu span {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav.menu ul {
+    width: 9rem;
+    position: absolute;
+    top: 2.5rem;
+    left: -5rem;
     list-style: none;
+    display: none;
+    flex-direction: column;
+    gap: .6rem;
+    background-color: var(--header-background-color);
 }
 
-/* menu items settings */
-header nav ul li {
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-/* menu links settings */
-header nav ul li a {
-    color: var(--color4);
+nav.menu ul li a {
     text-decoration: none;
-    transition: color 0.3s ease-in-out;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+    color: #fff;
+    display: block;
+    padding: .7rem 1rem;
 }
 
-header nav ul li a:hover {
-    background-color: var(--color3);
-    color: var(--color5);
+nav.menu ul li:hover {
+    background-color: var(--color2);
 }
-
