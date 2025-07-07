@@ -1,9 +1,31 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Origin";
+    src: url(../fonts/OriginTech\ personal\ use.ttf);
+}
+
+@font-face {
+    font-family: "Cyborg";
+    src: url(../fonts/Cyborg\ Punk.ttf);
+}
+
+@font-face {
+    font-family: "Typelight";
+    src: url(../fonts/TypeLightSans-KV84p.otf);
+}
+
 :root {
     --header-background-color: #171F26;
     --color2: #405059;
     --color3: #DDF2AE;
     --color4: #F7F0E8;
     --color5: #080004;
+    --dark-gradient: #010102;
+
+    --font-others-title: "Origin", 'Poppins', sans-serif;
+    --font-main-title: "Cyborg", 'Poppins', sans-serif;
+    --font-text: "Typelight", 'Poppins', sans-serif;;
 }
 
 /* html settings */
@@ -19,9 +41,16 @@ body {
     color: var(--color4);
 }
 
+/* paragraph settings */
+p {
+    margin-bottom: 1rem;
+    font-family: var(--font-text);
+    text-indent: 1rem;
+}
+
 /* header settings */
 header {
-    background-color: var(--header-background-color);
+    background: linear-gradient(to bottom, var(--color2) 10%, var(--header-background-color) 90%);
     position: fixed;
     top: 0;
     width: 100%;
@@ -71,4 +100,50 @@ nav.menu ul li a {
 
 nav.menu ul li:hover {
     background-color: var(--color2);
+}
+
+/* sections settings */
+section {
+    padding-top: 8.9rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 100vh;
+}
+
+/* introdution settings */
+section.introdution {
+    height: 100vh;
+    background: url(../images/background-page.png) center/cover no-repeat;
+
+}
+section.introdution h1 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 100;
+    font-family: var(--font-main-title);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+section.introdution p {
+    background-color: rgba(82, 82, 82, 0.658);
+    padding: 1rem;
+    border-radius: .3rem;
+}
+
+/* about me settings */
+section.about-me {
+    height: 100vh;
+    padding-top: 3rem;
+    background: linear-gradient(to bottom, var(--dark-gradient) 50%, var(--header-background-color));
+}
+
+section.about-me h2 {
+    margin-bottom: 2rem;
+    font-family: var(--font-others-title);
+    font-weight: 500;
+}
+
+section.about-me p {
+   
 }
