@@ -16,8 +16,8 @@
             <ul id="menuList">
                 <li><a href="#intro" id="btnHome">Inicio</a></li>
                 <li><a href="#about" id="btnAbout">Sobre mim</a></li>
-                <li><a href="#" id="btnSkills">Habilidades</a></li>
-                <li><a href="#" id="btnProjects">Projetos</a></li>
+                <li><a href="#skills" id="btnSkills">Habilidades</a></li>
+                <li><a href="#projects" id="btnProjects">Projetos</a></li>
                 <li><a href="#" id="btnContact">Contato</a></li>
             </ul>
         </nav>
@@ -30,21 +30,57 @@
                 Bem vindo a minha página!
                 Está página foi criada para falar de mim e mostrar um pouco do meu trabalho. Sinita-se à vontade para olhar o conteúdo e dê o seu feedback no final.
             </p>
+
+            <img src="./src/images/rede-e-inovacao.png" alt="Figura que representa como o mundo está conectado">
         </section>
         <section class="about-me" id="about">
             <h2>Sobre mim</h2>
             
-            <p>
-                Meu nome é charlesson mendes pereira, sou atualmente aluno do curso de ciências da computação na Universidade Estadual da Bahia.
-            </p>
+            <div class="text">
+                <p>
+                    Meu nome é charlesson mendes pereira, sou atualmente aluno do curso de ciências da computação na Universidade Estadual da Bahia.
+                </p>
+                <p>
+                    Para conseguir a tão sonhada vaga de programador, resolvi ingressar na área da programação web. Venho gostando do que estou aprendendo e isso me da ainda mais animo para adiquirir mais conhecimento.
+                </p>
+                <p>
+                    Meu plano é iniciar estudando front-end. Depois de ter fixado bem o conteudo, pretendo partir para algum framework e partir para o back-end depois.
+                </p>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <div class="html">
+                    <img src="./src/images/html-logo.png" alt="Logo do html">
+                    <progress value="80" max="100"></progress>
+                </div>
 
-            <p>
-                Para conseguir a tão sonhada vaga de programador, resolvi ingressar na área da programação web. Venho gostando do que estou aprendendo e isso me da ainda mais animo para adiquirir mais conhecimento.
-            </p>
+                <div class="css">
+                    <img src="./src/images/css-logo.png" alt="Logo do css">
+                    <progress value="75" max="100"></progress>
+                </div>
 
-            <p>
-                Meu plano é iniciar estudando front-end. Depois de ter fixado bem o conteudo, pretendo partir para algum framework e partir para o back-end depois.
-            </p>
+                <div class="js">
+                    <img src="./src/images/js-logo.png" alt="Logo do javascript">
+                    <progress value="20" max="100"></progress>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <h2>Projetos</h2>
+            <div class="proj">
+                <img src="./src/images/social-media-links-project.png" alt="Imagem do projeto">
+                <a href="https://charlesson-mp.github.io/social-links-profile-main/" target="_blank">Social-media-links</a>
+            </div>
+            <div class="proj">
+                <img src="./src/images/projeto-magickai.png" alt="Imagem do projeto">
+                <a href="https://charlesson-mp.github.io/projeto-magickai/" target="_blank">Projeto-magickai</a>
+            </div>
+            <div class="proj">
+                <img src="./src/images/recipe-page.png" alt="Imagem do projeto">
+                <a href="https://charlesson-mp.github.io/recipe-page/">Recipe-page</a>
+            </div>
         </section>
     </main>
     <script src="/src/scripts/script.js"></script>
