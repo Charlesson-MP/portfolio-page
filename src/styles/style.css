@@ -43,13 +43,19 @@ body {
 
 /* general settings */
 section {
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 1.5rem 2rem 1.5rem;
 }
 
 p {
     margin-bottom: 1rem;
     font-family: var(--font-text);
     text-indent: 1rem;
+    font-size: 1.2rem;
+    background-color: rgba(82, 82, 82, 0.658);
+    padding: 1rem;
+    max-width: 30rem;
+    border-radius: 0.3rem;
+    margin: auto;
 }
 
 h2 {
@@ -114,143 +120,4 @@ nav.menu ul li a {
 
 nav.menu ul li:hover {
   background-color: var(--color2);
-}
-
-/* introdution settings */
-section.introdution {
-  padding-top: 8.9rem;
-  background: url(../images/background-page.png) center/cover no-repeat fixed;
-}
-section.introdution h1 {
-  color: white;
-  font-size: 1.25rem;
-  font-weight: 100;
-  font-family: var(--font-main-title);
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-section.introdution p {
-  background-color: rgba(82, 82, 82, 0.658);
-  padding: 1rem;
-  border-radius: 0.3rem;
-}
-
-section.introdution img {
-  display: none;
-}
-
-/* about me settings */
-section.about-me {
-  height: 100%;
-  padding-top: 2rem;
-  background: linear-gradient(
-    to bottom,
-    var(--dark-gradient) 50%,
-    var(--header-background-color)
-  );
-}
-
-section.about-me h2 {
-  margin-bottom: 2rem;
-  font-family: var(--font-others-title);
-  font-weight: normal;
-}
-
-section.about-me .text {
-  background-color: rgba(82, 82, 82, 0.658);
-  padding: 1rem;
-  border-radius: 0.3rem;
-}
-
-section.about-me .text p:nth-child(3) {
-  margin-bottom: 0;
-}
-
-/* skills settings */
-section.skills {
-  padding-top: 2rem;
-  background: url(../images/background-skills.png) center/cover no-repeat fixed;
-}
-
-section.skills h2 {
-  font-family: var(--font-others-title);
-  font-weight: normal;
-  margin-bottom: 2rem;
-}
-
-section.skills .skills {
-  background-color: rgba(82, 82, 82, 0.658);
-  padding: 1rem;
-  border-radius: 0.3rem;
-}
-
-/* section.skills .skills .html {
-    margin-bottom: 2rem;
-} */
-
-section.skills .skills .html img,
-section.skills .skills .html progress {
-    display: block;
-    margin: auto;
-}
-
-section.skills .skills .css {
-    margin-bottom: 2em;
-}
-
-section.skills .skills .css img,
-section.skills .skills .css progress {
-    display: block;
-    margin: auto;
-}
-
-section.skills .skills .js img,
-section.skills .skills .js progress {
-    display: block;
-    margin: auto;
-}
-
-section.skills .skills .html progress,
-section.skills .skills .css progress,
-section.skills .skills .js progress {
-    accent-color: rgb(91, 91, 158);
-}
-
-
-/* projects settings */
-section.projects {
-    background: linear-gradient(
-    to bottom,
-    var(--dark-gradient) 50%,
-    var(--header-background-color)
-  );
-  padding-top: 2rem;
-}
-
-section.projects .proj {
-    background-color: rgba(82, 82, 82, 0.658);
-    padding: .5rem;
-    border-radius: .5rem;
-    margin-bottom: 2rem;
-}
-
-section.projects .proj img,
-section.projects .proj a {
-    display: block;
-    margin: auto;
-}
-
-section.projects .proj img {
-    margin-bottom: 1rem;
-}
-
-section.projects .proj a {
-    text-decoration: none;
-    color: #000;
-    text-align: center;
-    font-size: 1.2rem;
-    background-color: #C5F82A;
-    padding: .5rem;
-    border-radius: .5rem;
 }
