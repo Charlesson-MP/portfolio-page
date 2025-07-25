@@ -75,7 +75,7 @@ header {
   top: 0;
   width: 100%;
   height: 5rem;
-  padding: 1rem 1rem;
+  padding: 1rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -109,6 +109,10 @@ nav.menu ul {
   left: -5rem;
   list-style: none;
   background-color: var(--header-background-color);
+}
+
+nav.menu ul.aberto {
+  display: flex;
 }
 
 nav.menu ul li a {

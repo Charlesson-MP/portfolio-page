@@ -7,12 +7,7 @@ const btnProjects = document.getElementById("btnProjects");
 const btnContact = document.getElementById("btnContact");
 
 function abrirFecharMenu() {
-    const estaFechado = getComputedStyle(menuList).display === "none";
-    
-    if(estaFechado)
-        menuList.style.display = "flex";
-    else
-        menuList.style.display = "none";
+    menuList.classList.toggle("aberto");
 }
 
 btnMenu.addEventListener("click", abrirFecharMenu);
