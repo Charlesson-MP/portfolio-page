@@ -22,7 +22,7 @@
   --color4: #f7f0e8;
   --color5: #080004;
   --background-p: #40505965;
-  --background-gradient: linear-gradient(to bottom, var(--color2), var(--color5));
+  --background-gradient: linear-gradient(to bottom, var(--color5), var(--color2), var(--color5));
   --p-gradient: radial-gradient(circle, #0800042f 10%, #f7f0e848);
 
   --font-others-title: "Origin", "Poppins", sans-serif;
@@ -47,6 +47,7 @@ body {
 /* general settings */
 section {
     padding: 0 1.5rem 2rem 1.5rem;
+    min-height: 100VH;
 }
 
 p {
@@ -66,6 +67,7 @@ h2 {
     font-family: var(--font-others-title);
     font-weight: normal;
     margin-bottom: 2rem;
+    font-size: 2rem;
 }
 
 /* header settings */
@@ -128,14 +130,13 @@ nav.menu ul li:hover {
 
 /* Home settings */
 .home {
-  padding-top: 7rem;
-  min-height: 100vh;
+  padding-top: 10rem;
 }
 
 h1 {
   font: var(--font-main-title);
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .home .text {
@@ -145,4 +146,15 @@ h1 {
 
 .home img {
   display: none;
+}
+
+/* About me settings */
+.about-me {
+  padding-top: 2rem;
+}
+
+.presentation img {
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
 }
