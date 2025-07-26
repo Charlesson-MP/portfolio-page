@@ -32,11 +32,6 @@
   .menu li a {
     padding: 0.5rem 1rem;
   }
-
-  /* Home settings */
-  .home {
-    padding-top: 5rem;
-  }
 }
 
 @media screen and (min-width: 64rem) {
@@ -83,6 +78,7 @@
         position: relative;
         width: 20.375rem;
         border-radius: 50%;
+        z-index: -1;
     }
 
     .borda-girando::before {
@@ -119,5 +115,15 @@
 
     .presentation p {
         margin: 0;
+    }
+
+
+    /* Skill settings */
+    .skill img {
+        transition: transform .5s ease-in-out;
+    }
+
+    .skill img:hover {
+        transform: scale(1.1, 1.1);
     }
 }

@@ -22,7 +22,12 @@
   --color4: #f7f0e8;
   --color5: #080004;
   --background-p: #40505965;
-  --background-gradient: linear-gradient(to bottom, var(--color5), var(--color2), var(--color5));
+  --background-gradient: linear-gradient(
+    to bottom,
+    var(--color5),
+    var(--color2),
+    var(--color5)
+  );
   --p-gradient: radial-gradient(circle, #0800042f 10%, #f7f0e848);
 
   --font-others-title: "Origin", "Poppins", sans-serif;
@@ -40,39 +45,43 @@ html {
 body {
   height: 100%;
   font-family: "Poppins", sans-serif;
-  background: var(--background-gradient);
+  background: var(--background-gradient) fixed;
   color: var(--color4);
 }
 
 /* general settings */
 section {
-    padding: 0 1.5rem 2rem 1.5rem;
-    min-height: 100VH;
+  padding: 0 1.5rem 2rem 1.5rem;
+  min-height: 100vh;
 }
 
 p {
-    margin-bottom: 1rem;
-    font-family: var(--font-text);
-    text-indent: 1rem;
-    font-size: 1.2rem;
-    background: var(--p-gradient);
-    padding: 1rem;
-    max-width: 30rem;
-    border-radius: 0.3rem;
-    margin: auto;
-    box-shadow: 0 0 5rem #00000091;
+  margin-bottom: 1rem;
+  font-family: var(--font-text);
+  text-indent: 1rem;
+  font-size: 1.2rem;
+  background: var(--p-gradient);
+  padding: 1rem;
+  max-width: 30rem;
+  border-radius: 0.3rem;
+  margin: auto;
+  box-shadow: 0 0 5rem #00000091;
 }
 
 h2 {
-    font-family: var(--font-others-title);
-    font-weight: normal;
-    margin-bottom: 2rem;
-    font-size: 2rem;
+  font-family: var(--font-others-title);
+  font-weight: normal;
+  margin-bottom: 2rem;
+  font-size: 2rem;
 }
 
 /* header settings */
 header {
-  background: linear-gradient(to bottom, var(--color2), var(--header-background-color));
+  background: linear-gradient(
+    to bottom,
+    var(--color2),
+    var(--header-background-color)
+  );
   position: fixed;
   top: 0;
   width: 100%;
@@ -122,6 +131,7 @@ nav.menu ul li a {
   color: #fff;
   display: block;
   padding: 0.7rem 1rem;
+  font-family: var(--font-text);
 }
 
 nav.menu ul li:hover {
@@ -157,4 +167,32 @@ h1 {
   display: block;
   margin: auto;
   margin-bottom: 1rem;
+}
+
+/* Skills settings */
+.skills {
+  padding-top: 2rem;
+  min-height: auto;
+}
+
+.skills-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.skill {
+  background-color: #40505959;
+  padding: 2rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 3rem;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.438);
+}
+
+.skill progress {
+  accent-color: var(--color3);
 }
