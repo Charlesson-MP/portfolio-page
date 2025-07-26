@@ -21,10 +21,12 @@
   --color3: #ddf2ae;
   --color4: #f7f0e8;
   --color5: #080004;
-  --dark-gradient: #010102;
+  --background-p: #40505965;
+  --background-gradient: linear-gradient(to bottom, var(--color2), var(--color5));
+  --p-gradient: radial-gradient(circle, #0800042f 10%, #f7f0e848);
 
   --font-others-title: "Origin", "Poppins", sans-serif;
-  --font-main-title: "Cyborg", "Poppins", sans-serif;
+  --font-main-title: normal 500 1.3rem "Cyborg", "Poppins", sans-serif;
   --font-text: "Typelight", "Poppins", sans-serif;
 }
 
@@ -36,8 +38,9 @@ html {
 
 /* body settings */
 body {
+  height: 100%;
   font-family: "Poppins", sans-serif;
-  background-color: var(--color5);
+  background: var(--background-gradient);
   color: var(--color4);
 }
 
@@ -51,11 +54,12 @@ p {
     font-family: var(--font-text);
     text-indent: 1rem;
     font-size: 1.2rem;
-    background-color: rgba(82, 82, 82, 0.658);
+    background: var(--p-gradient);
     padding: 1rem;
     max-width: 30rem;
     border-radius: 0.3rem;
     margin: auto;
+    box-shadow: 0 0 5rem #00000091;
 }
 
 h2 {
@@ -66,11 +70,7 @@ h2 {
 
 /* header settings */
 header {
-  background: linear-gradient(
-    to bottom,
-    var(--color2) 10%,
-    var(--header-background-color) 90%
-  );
+  background: linear-gradient(to bottom, var(--color2), var(--header-background-color));
   position: fixed;
   top: 0;
   width: 100%;
@@ -124,4 +124,25 @@ nav.menu ul li a {
 
 nav.menu ul li:hover {
   background-color: var(--color2);
+}
+
+/* Home settings */
+.home {
+  padding-top: 7rem;
+  min-height: 100vh;
+}
+
+h1 {
+  font: var(--font-main-title);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.home .text {
+  max-width: 30rem;
+  margin: auto;
+}
+
+.home img {
+  display: none;
 }
