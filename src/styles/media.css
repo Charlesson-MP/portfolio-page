@@ -32,6 +32,11 @@
   .menu li a {
     padding: 0.5rem 1rem;
   }
+
+  /* Home settings */
+  .home {
+    padding-top: 5rem;
+  }
 }
 
 @media screen and (min-width: 64rem) {
@@ -51,11 +56,11 @@
         display: block;
         position: relative;
         z-index: -1;
-        animation: subirDescer 2s ease-in-out infinite alternate;
+        animation: aumentarDiminuir 2s ease-in-out infinite alternate;
     }
 
 
-    @keyframes subirDescer {
+    @keyframes aumentarDiminuir {
         100% {
             transform: scale(1.1, 1.1);
         }
