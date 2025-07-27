@@ -18,7 +18,7 @@
 :root {
   --header-background-color: #171f26;
   --color2: #405059;
-  --color3: #ddf2ae;
+  --color3: #b7e94d;
   --color4: #f7f0e8;
   --color5: #080004;
   --background-p: #40505965;
@@ -196,3 +196,81 @@ h1 {
 .skill progress {
   accent-color: var(--color3);
 }
+
+/* Projects settings */
+.projects {
+  padding-top: 2rem;
+}
+
+.projects-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project {
+  background-color: #40505959;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3rem;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.438);
+  overflow: hidden;
+}
+
+.img-project {
+  width: 100%;
+}
+
+.img-project img {
+  width: 100%;
+  display: block;
+}
+
+.project h3 {
+  text-align: center;
+}
+
+
+.text-card-project {
+  padding: 1rem;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+}
+
+.project p {
+  font-size: .9rem;
+  text-align: justify;
+  background: none;
+  box-shadow: none;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.project a {
+  background-color: var(--color3);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: var(--header-background-color);
+  font-family: var(--font-text);
+  font-weight: normal;
+  border-radius: 3rem;
+}
+
+.project a:nth-child(2) {
+  background-color: 	#8256f1;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color:#fff;
+  font-family: var(--font-text);
+  font-weight: normal;
+  border-radius: 3rem;
+}
+

@@ -1,4 +1,9 @@
 @media screen and (min-width: 48rem) {
+    /* General settings */
+    h2 {
+        margin-left: 5rem;
+    }
+    
     /* menu settings */    
     .menu {
         width: 100%;
