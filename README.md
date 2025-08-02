@@ -44,7 +44,8 @@ portfolio-page/ <br>
 │   │   ├── preview.png <br>
 │   │   ├── projeto-magickai.png <br>
 │   │   ├── social-media-links-project.png <br>
-│   │   └── whatsapp.png <br>
+│   │   ├── whatsapp.png <br>
+│   │   └── projeto-lista-de-tarefas.png <br>
 │   ├── scripts/ <br>
 │   │   └── script.js <br>
 │   └── styles/ <br>
