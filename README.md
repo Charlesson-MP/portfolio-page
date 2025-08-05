@@ -20,43 +20,44 @@ Este projeto é o meu site de portfólio pessoal, desenvolvido para mostrar meu 
 ## Estrutura de Diretórios 📁
 
 O projeto está organizado na seguinte estrutura de diretórios:
-
-portfolio-page/ <br>
-├── src/ <br>
-│   ├── fonts/ <br>
-│   │   ├── Cyborg Punk.ttf <br>
-│   │   ├── OriginTech personal use.ttf <br>
-│   │   └── TypeLightSans-KV84p.otf <br>
-│   ├── images/ <br>
-│   │   ├── css-logo.png <br>
-│   │   ├── curiosidades-tecnologia.png <br>
-│   │   ├── email.png <br>
-│   │   ├── favicon.ico <br>
-│   │   ├── github.png <br>
-│   │   ├── global-dev.png <br>
-│   │   ├── html-logo.png <br>
-│   │   ├── insta.png <br>
-│   │   ├── jogo-da-velha.png <br>
-│   │   ├── js-logo.png <br>
-│   │   ├── linkedin.png <br>
-│   │   ├── logo-header.png <br>
-│   │   ├── minha-foto.png <br>
-│   │   ├── preview.png <br>
-│   │   ├── projeto-magickai.png <br>
-│   │   ├── social-media-links-project.png <br>
-│   │   ├── whatsapp.png <br>
-│   │   └── projeto-lista-de-tarefas.png <br>
-│   ├── scripts/ <br>
-│   │   └── script.js <br>
-│   └── styles/ <br>
-│       ├── media.css <br>
-│       ├── reset.css <br>
-│       └── style.css <br>
-├── .gitignore <br>
-├── index.html <br>
-├── LICENSE <br>
-├── README.md <br>
-
+```
+portfolio-page/
+├── src/
+│   ├── fonts/
+│   │   ├── Cyborg Punk.ttf
+│   │   ├── OriginTech personal use.ttf
+│   │   └── TypeLightSans-KV84p.otf
+│   ├── images/
+│   │   ├── css-logo.png
+│   │   ├── curiosidades-tecnologia.png
+│   │   ├── email.png
+│   │   ├── favicon.ico
+│   │   ├── github.png
+│   │   ├── global-dev.png
+│   │   ├── html-logo.png
+│   │   ├── insta.png
+│   │   ├── jogo-da-velha.png
+│   │   ├── js-logo.png
+│   │   ├── linkedin.png
+│   │   ├── logo-header.png
+│   │   ├── minha-foto.png
+│   │   ├── music-player.png
+│   │   ├── preview.png
+│   │   ├── projeto-magickai.png
+│   │   ├── projeto-lista-de-tarefas.png
+│   │   ├── social-media-links-project.png
+│   │   └── whatsapp.png
+│   ├── scripts/
+│   │   └── script.js
+│   └── styles/
+│       ├── media.css
+│       ├── reset.css
+│       └── style.css
+├── .gitignore
+├── index.html
+├── LICENSE
+├── README.md
+```
 
 ## Como Acessar 🌐
 
