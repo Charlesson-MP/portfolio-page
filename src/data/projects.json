@@ -1,0 +1,58 @@
+[
+    {
+        "cover_path": "./src/images/projeto-wiki-movies.png",
+        "alt_img": "Imagem do projeto wiki-movies",
+        "title": "WikiMovies",
+        "description": "Uma aplicação web que permite explorar informações detalhadas sobre filmes, incluindo sinopse, classificação indicativa, capa, entre outras informações, consumindo dados da API do TMDb de forma dinâmica e organizada.",
+        "link_page": "https://charlesson-mp.github.io/wiki-movies/",
+        "link_repository_page": "https://github.com/Charlesson-MP/wiki-movies"
+    },
+    {
+        "cover_path": "./src/images/projeto-magickai.png",
+        "alt_img": "Imagem do projeto magickAi",
+        "title": "Magick AI",
+        "description": "UMagick IA é um e-commerce fictício inspirado em jogos de cartas colecionáveis, onde os usuários podem visualizar e filtrar cartas mágicas com base em categoria e preço.",
+        "link_page": "https://charlesson-mp.github.io/projeto-magickai/",
+        "link_repository_page": "https://github.com/Charlesson-MP/projeto-magickai"
+    },
+    {
+        "cover_path": "./src/images/social-media-links-project.png",
+        "alt_img": "Imagem do projeto social links",
+        "title": "Social links",
+        "description": "Social Links Profile é uma página de perfil minimalista desenvolvida para centralizar links importantes de presença online, como GitHub, LinkedIn, Instagram e outros.",
+        "link_page": "https://charlesson-mp.github.io/social-links-profile-main/",
+        "link_repository_page": "https://github.com/Charlesson-MP/social-links-profile-main"
+    },
+    {
+        "cover_path": "./src/images/jogo-da-velha.png",
+        "alt_img": "Imagem do projeto jogo da velha",
+        "title": "Jogo da velha",
+        "description": "Este é um clássico Jogo da Velha desenvolvido com HTML, CSS e JavaScript puro. A interface é limpa e moderna, com placar interativo, botão de reinício e layout responsivo. O projeto oferece uma experiência intuitiva para dois jogadores locais, permitindo acompanhar o desempenho de cada rodada em tempo real.",
+        "link_page": "https://charlesson-mp.github.io/jogo-da-velha/",
+        "link_repository_page": "https://github.com/Charlesson-MP/jogo-da-velha"
+    },
+    {
+        "cover_path": "./src/images/curiosidades-tecnologia.png",
+        "alt_img": "Imagem do projeto android",
+        "title": "Projeto android",
+        "description": "Este projeto é uma página web informativa sobre tecnologia, com foco em curiosidades do sistema operacional Android. A principal seção apresenta a história do mascote do Android, incluindo sua primeira versão criada por Dan Morrill em 2007 com o software Inkscape.",
+        "link_page": "https://charlesson-mp.github.io/projeto-android/",
+        "link_repository_page": "https://github.com/Charlesson-MP/projeto-android"
+    },
+    {
+        "cover_path": "./src/images/projeto-lista-de-tarefas.png",
+        "alt_img": "Imagem do projeto lista de tarefas",
+        "title": "Lista de tarefas",
+        "description": "A aplicação permite aos usuários adicionar novas tarefas, marcá-las como concluídas e excluí-las. O design é responsivo, com um fundo de gradiente roxo e a interface principal é apresentada em um card com bordas arredondadas e um fundo semi-transparente.",
+        "link_page": "https://charlesson-mp.github.io/lista-de-tarefas/",
+        "link_repository_page": "https://github.com/Charlesson-MP/lista-de-tarefas"
+    },
+    {
+        "cover_path": "./src/images/music-player.png",
+        "alt_img": "Imagem do projeto music-player",
+        "title": "Music player",
+        "description": "Player de música desenvolvido com HTML, CSS e JavaScript, que permite ao usuário selecionar arquivos de áudio locais e reproduzi-los diretamente no navegador. Projeto com foco em usabilidade, validação de arquivos e interface visual personalizada.",
+        "link_page": "https://charlesson-mp.github.io/music-player",
+        "link_repository_page": "https://github.com/Charlesson-MP/music-player"
+    }
+]
