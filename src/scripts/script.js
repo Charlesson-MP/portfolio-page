@@ -20,3 +20,50 @@ document.addEventListener("click", (evt) => {
     if(clickForaDoMenu)
         abrirFecharMenu()
 });
+
+const btnPrev = document.querySelector('.btnPrev');
+const btnNext = document.querySelector('.btnNext');
+const container = document.querySelector('.container-projects');
+const track = document.querySelector('.projects-board');
+let currentProject = 0;
+
+function updateLimit() {
+    const containerWidth = container.offsetWidth;
+    const cardWidth = track.children[0].offsetWidth + 32;
+
+    const visibleCards = Math.floor(containerWidth / cardWidth);
+    return track.children.length - visibleCards;
+}
+
+btnPrev.addEventListener('click', () => {
+    if(currentProject === 0) return
+
+    currentProject--;
+    updateCarousel();
+});
+
+btnNext.addEventListener('click', () => {
+    const limitCard = updateLimit();
+    if(currentProject === limitCard) return
+    
+    currentProject++;
+    updateCarousel();
+});
+
+function updateCarousel() {
+    const limitCard = updateLimit();
+
+    if(currentProject > limitCard) currentProject = limitCard;
+
+    track.style.transform = `translateX(-${currentProject * 20}rem)`;
+
+    btnPrev.disabled = currentProject === 0;
+    btnPrev.classList.toggle('disable', btnPrev.disabled);
+
+    btnNext.disabled = currentProject === limitCard;
+    btnNext.classList.toggle('disable', btnNext.disabled);
+}
+
+updateCarousel();
+
+window.addEventListener('resize', updateCarousel);
