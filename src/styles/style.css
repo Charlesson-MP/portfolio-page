@@ -91,6 +91,7 @@ header {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0.125rem 0.125rem 0.25rem rgba(255, 255, 255, 0.507);
+  z-index: 100;
 }
 
 /* menu settings */
@@ -202,22 +203,31 @@ h1 {
   padding-top: 2rem;
 }
 
+.container-projects {
+  overflow: hidden;
+  width: 20rem;
+  display: flex;
+  margin: auto;
+  padding: 1rem;
+}
+
 .projects-board {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  transition: transform .5s;
   gap: 2rem;
 }
 
 .project {
   background-color: #40505959;
-  width: 25rem;
+  width: 18rem;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 3rem;
-  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.438);
   overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem #000;
+  padding-bottom: 1rem;
 }
 
 .img-project {
@@ -227,7 +237,7 @@ h1 {
 .img-project img {
   width: 100%;
   display: block;
-  height: 14rem;
+  height: 11rem;
 }
 
 .project h3 {
@@ -236,7 +246,7 @@ h1 {
 
 
 .text-card-project {
-  padding: 1rem;
+  padding: .3rem;
 }
 
 .project h3 {
@@ -245,9 +255,14 @@ h1 {
 
 .project p {
   font-size: .9rem;
-  text-align: justify;
+  /* text-align: justify; */
   background: none;
   box-shadow: none;
+  overflow-y: scroll;
+  height: 5rem;
+  margin: 1rem 1rem 1rem 1rem;
+  border: .1rem solid #808080;
+  padding: .1rem .5rem;
 }
 
 .links {
@@ -258,7 +273,7 @@ h1 {
 
 .project a {
   background-color: var(--color3);
-  padding: 1rem 2rem;
+  padding: .5rem 1rem;
   text-decoration: none;
   color: var(--header-background-color);
   font-family: var(--font-text);
@@ -268,12 +283,41 @@ h1 {
 
 .project a:nth-child(2) {
   background-color: 	#8256f1;
-  padding: 1rem 2rem;
+  padding: .5rem 1rem;
   text-decoration: none;
   color:#fff;
   font-family: var(--font-text);
   font-weight: normal;
   border-radius: 3rem;
+}
+
+.nav-projects {
+  text-align: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.nav-projects button {
+  background-color: transparent;
+  color: var(--color4);
+  padding: .5rem;
+  border: none;
+  border-radius: 50%;
+}
+
+.nav-projects button:hover {
+  background-color: #405059;
+}
+
+.nav-projects button span {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.nav-projects .disable {
+  color: #80808062;
+  cursor: not-allowed;
 }
 
 /* Footer settings */

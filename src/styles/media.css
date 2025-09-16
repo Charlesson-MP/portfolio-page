@@ -37,6 +37,10 @@
   .menu li a {
     padding: 0.5rem 1rem;
   }
+
+  .container-projects {
+    width: 40rem;
+  }
 }
 
 @media screen and (min-width: 64rem) {
@@ -130,5 +134,9 @@
 
     .skill img:hover {
         transform: scale(1.1, 1.1);
+    }
+
+    .container-projects {
+        width: 60rem;
     }
 }
