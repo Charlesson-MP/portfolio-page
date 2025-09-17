@@ -172,6 +172,7 @@ h1 {
 
 /* Skills settings */
 .skills {
+  padding-top: 2rem;
   min-height: auto;
 }
 
@@ -206,6 +207,10 @@ h1 {
 }
 
 /* Projects settings */
+.projects {
+  padding-top: 2rem;
+}
+
 .container-projects {
   overflow: hidden;
   width: 20rem;
