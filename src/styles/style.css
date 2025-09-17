@@ -172,26 +172,33 @@ h1 {
 
 /* Skills settings */
 .skills {
-  padding-top: 2rem;
   min-height: auto;
+}
+
+.container-skills {
+  overflow: hidden;
+  width: 17rem;
+  display: flex;
+  margin: auto;
+  padding: 1rem;
 }
 
 .skills-board {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  transition: transform .5s;
   gap: 2rem;
 }
 
 .skill {
   background-color: #40505959;
-  padding: 2rem 3.5rem;
+  padding: 2rem 0;
+  width: 15rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   border-radius: 3rem;
-  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.438);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.438);
 }
 
 .skill progress {
@@ -199,10 +206,6 @@ h1 {
 }
 
 /* Projects settings */
-.projects {
-  padding-top: 2rem;
-}
-
 .container-projects {
   overflow: hidden;
   width: 20rem;
@@ -220,7 +223,6 @@ h1 {
 .project {
   background-color: #40505959;
   width: 18rem;
-  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -291,14 +293,14 @@ h1 {
   border-radius: 3rem;
 }
 
-.nav-projects {
+.nav-projects, .nav-skills {
   text-align: center;
   display: flex;
   gap: 1rem;
   justify-content: center;
 }
 
-.nav-projects button {
+.nav-projects button, .nav-skills button {
   background-color: transparent;
   color: var(--color4);
   padding: .5rem;
@@ -306,16 +308,16 @@ h1 {
   border-radius: 50%;
 }
 
-.nav-projects button:hover {
+.nav-projects button:hover, .nav-skills button:hover {
   background-color: #405059;
 }
 
-.nav-projects button span {
+.nav-projects button span, .nav-skills button span {
   font-size: 3rem;
   text-align: center;
 }
 
-.nav-projects .disable {
+.nav-projects .disable, .nav-skills .disable {
   color: #80808062;
   cursor: not-allowed;
 }
