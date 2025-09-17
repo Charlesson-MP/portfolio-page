@@ -55,27 +55,41 @@
             </section>
             <section class="skills" id="skills">
                 <h2>Habilidades</h2>
-                <div class="skills-board">
-                    <div class="skill">
-                        <h3>HTML</h3>
-                        <img src="./src/images/html-logo.png" alt="Logo do html" title="Hypertext Markup Language">
-                        <progress value="85" max="100" title="85%"></progress>
+                <div class="container-skills">
+                    <div class="skills-board">
+                        <div class="skill">
+                            <h3>HTML</h3>
+                            <img src="./src/images/html-logo.png" alt="Logo do html" title="Hypertext Markup Language">
+                            <progress value="85" max="100" title="85%"></progress>
+                        </div>
+                        <div class="skill">
+                            <h3>CSS</h3>
+                            <img src="./src/images/css-logo.png" alt="Logo do css" title="Cascading Style Sheets">
+                            <progress value="80" max="100" title="80%"></progress>
+                        </div>
+                        <div class="skill">
+                            <h3>JavaScript</h3>
+                            <img src="./src/images/js-logo.png" alt="Logo do javascript" title="Linguagem de programação para web">
+                            <progress value="75" max="100" title="75%"></progress>
+                        </div>
+                        <div class="skill">
+                            <h3>Git</h3>
+                            <img src="./src/images/git-logo.png" alt="Logo do git" title="Sistema de versionamento de código">
+                            <progress value="55" max="100" title="55%"></progress>
+                        </div>
                     </div>
-                    <div class="skill">
-                        <h3>CSS</h3>
-                        <img src="./src/images/css-logo.png" alt="Logo do css" title="Cascading Style Sheets">
-                        <progress value="80" max="100" title="80%"></progress>
-                    </div>
-                    <div class="skill">
-                        <h3>JavaScript</h3>
-                        <img src="./src/images/js-logo.png" alt="Logo do javascript" title="Linguagem de programação para web">
-                        <progress value="75" max="100" title="75%"></progress>
-                    </div>
-                    <div class="skill">
-                        <h3>Git</h3>
-                        <img src="./src/images/git-logo.png" alt="Logo do git" title="Sistema de versionamento de código">
-                        <progress value="55" max="100" title="55%"></progress>
-                    </div>
+                </div>
+                <div class="nav-skills">
+                    <button type="button" class="btnPrevSkill disable">
+                        <span class="material-symbols-outlined">
+                            arrow_back_ios_new
+                        </span>
+                    </button>
+                    <button type="button" class="btnNextSkill">
+                        <span class="material-symbols-outlined">
+                            arrow_forward_ios
+                        </span>
+                    </button>
                 </div>
             </section>
             <section class="projects" id="projects">
@@ -83,18 +97,18 @@
                 <div class="container-projects">
                     <div class="projects-board"></div>
                 </div>
-                <nav class="nav-projects">
-                    <button type="button" class="btnPrev disable">
+                <div class="nav-projects">
+                    <button type="button" class="btnPrevProject disable">
                         <span class="material-symbols-outlined">
                             arrow_back_ios_new
                         </span>
                     </button>
-                    <button type="button" class="btnNext">
+                    <button type="button" class="btnNextProject">
                         <span class="material-symbols-outlined">
                             arrow_forward_ios
                         </span>
                     </button>
-                </nav>
+                </div>
             </secction>
         </article>
     </main>
