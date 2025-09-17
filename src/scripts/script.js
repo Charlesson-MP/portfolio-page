@@ -4,12 +4,17 @@ const btnHome = document.getElementById("btnHome");
 const btnAbout = document.getElementById("btnAbout");
 const btnSkills = document.getElementById("btnSkills");
 const btnProjects = document.getElementById("btnProjects");
-const projecsBoard = document.querySelector('.projects-board');
-const btnPrev = document.querySelector('.btnPrev');
-const btnNext = document.querySelector('.btnNext');
-const container = document.querySelector('.container-projects');
-const track = document.querySelector('.projects-board');
+const projectsBoard = document.querySelector('.projects-board');
+const btnPrevProject = document.querySelector('.btnPrevProject');
+const btnNextProject = document.querySelector('.btnNextProject');
+const containerProjects = document.querySelector('.container-projects');
 let currentProject = 0;
+
+const skillsBoard = document.querySelector('.skills-board');
+const btnPrevSkill = document.querySelector('.btnPrevSkill');
+const btnNextSkill = document.querySelector('.btnNextSkill');
+const containerSkills = document.querySelector('.container-skills');
+let currentSkill = 0;
 
 function abrirFecharMenu() {
     menuList.classList.toggle("aberto");
@@ -84,27 +89,27 @@ async function showProjects() {
 
         data.forEach(project => {
             const cardProject = createCardProject(project.cover_path, project.alt_img, project.title, project.description, project.link_page, project.link_repository_page);
-            projecsBoard.appendChild(cardProject);
+            projectsBoard.appendChild(cardProject);
         });
     }catch(error) {
         console.error('Erro ao mostrar projetos:', error);
     }
 
-    updateCarousel();
+    updateCarousel('project');
 }
 
 showProjects();
 
-function updateLimit() {
+function updateLimit(container, board) {
     let limit;
 
-    if(track.children.length) {
+    if(board.children.length) {
         const containerWidth = container.offsetWidth;
-        const cardWidth = track.children[0].offsetWidth + 32;
+        const cardWidth = board.children[0].offsetWidth + 32;
 
         const visibleCards = Math.floor(containerWidth / cardWidth);
 
-        limit = track.children.length - visibleCards;
+        limit = board.children.length - visibleCards;
     }else {
         limit = 0;
     }
@@ -112,33 +117,77 @@ function updateLimit() {
     return limit;
 }
 
-btnPrev.addEventListener('click', () => {
+btnPrevSkill.addEventListener('click', () => {
+    if(currentSkill === 0) return
+    
+    currentSkill--;
+    updateCarousel('skill');
+});
+
+btnNextSkill.addEventListener('click', () => {
+    const limitCard = updateLimit(containerSkills, skillsBoard);
+    if(currentSkill === limitCard) return
+    
+    currentSkill++;
+    updateCarousel('skill');
+});
+
+
+btnPrevProject.addEventListener('click', () => {
     if(currentProject === 0) return
 
     currentProject--;
-    updateCarousel();
+    updateCarousel('project');
 });
 
-btnNext.addEventListener('click', () => {
-    const limitCard = updateLimit();
+btnNextProject.addEventListener('click', () => {
+    const limitCard = updateLimit(containerProjects, projectsBoard);
     if(currentProject === limitCard) return
     
     currentProject++;
-    updateCarousel();
+    updateCarousel('project');
 });
 
-function updateCarousel() {
-    const limitCard = updateLimit();
+const carousels = {
+    skill: {
+        container: containerSkills,
+        board: skillsBoard,
+        getCurrent: () => currentSkill,
+        setCurrent: val => currentSkill = val,
+        width: 17,
+        btnPrev: btnPrevSkill,
+        btnNext: btnNextSkill
+    },
+    project: {
+        container: containerProjects,
+        board: projectsBoard,
+        getCurrent: () => currentProject,
+        setCurrent: val => currentProject = val,
+        width: 20,
+        btnPrev: btnPrevProject,
+        btnNext: btnNextProject
+    }
+}
 
-    if(currentProject > limitCard) currentProject = limitCard;
+function updateCarousel(element) {
+    const { container, board, getCurrent, setCurrent, width, btnPrev, btnNext } = carousels[element];
 
-    track.style.transform = `translateX(-${currentProject * 20}rem)`;
+    const limitCard = updateLimit(container, board);
 
-    btnPrev.disabled = currentProject === 0;
+    if(getCurrent() > limitCard) setCurrent(limitCard);
+
+    board.style.transform = `translateX(-${getCurrent() * width}rem)`;
+
+    btnPrev.disabled = getCurrent() === 0;
     btnPrev.classList.toggle('disable', btnPrev.disabled);
 
-    btnNext.disabled = currentProject === limitCard;
+    btnNext.disabled = getCurrent() === limitCard;
     btnNext.classList.toggle('disable', btnNext.disabled);
 }
 
-window.addEventListener('resize', updateCarousel);
+updateCarousel('skill');
+
+window.addEventListener('resize', () => {
+    updateCarousel('skill');
+    updateCarousel('project');
+});
