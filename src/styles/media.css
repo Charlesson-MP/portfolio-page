@@ -89,41 +89,9 @@
 
     .borda-girando {
         position: relative;
-        width: 20.375rem;
+        width: 20rem;
         border-radius: 50%;
         z-index: -1;
-    }
-
-    .borda-girando::before {
-        content: "";
-        position: absolute;
-        top: -5px;
-        left: -5px;
-        right: -5px;
-        bottom: -5px;
-        border: 4px solid transparent;
-        border-top: 4px solid var(--color3);
-        border-radius: 50%;
-        animation: girarBorda 2s linear infinite;
-        z-index: 0;
-    }
-
-    .borda-girando img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        position: relative;
-        z-index: 1;
-    }
-
-    @keyframes girarBorda {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
     }
 
     .presentation p {
