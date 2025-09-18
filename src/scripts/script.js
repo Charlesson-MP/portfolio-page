@@ -56,8 +56,8 @@ document.addEventListener("click", (evt) => {
         abrirFecharMenu()
 });
 
-async function loadProjects() {
-    const response = await fetch('./src/data/projects.json');
+async function loadData(url) {
+    const response = await fetch(url);
     const data = await response.json();
 
     return data;
@@ -109,7 +109,7 @@ function createCardProject(coverPath, altImg, title, description, linkPage, link
 
 async function showProjects() {
     try {
-        const data = await loadProjects();
+        const data = await loadData('./src/data/projects.json');
 
         data.forEach(project => {
             const cardProject = createCardProject(project.cover_path, project.alt_img, project.title, project.description, project.link_page, project.link_repository_page);
