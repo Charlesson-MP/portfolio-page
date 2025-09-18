@@ -8,7 +8,7 @@
     },
     {
         "name": "CSS",
-        "label_path": "./src/images/CSS-logo.png",
+        "label_path": "./src/images/css-logo.png",
         "label_alt": "Logo do CSS",
         "label_title": "Cascading Style Sheets",
         "progress_value": "80"
