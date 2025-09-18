@@ -185,21 +185,13 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.presentation img {
-  display: block;
-  margin: auto;
-  margin-bottom: 1rem;
-  object-fit: cover;
-  position: relative;
-  z-index: 1;
-}
 
 .borda-girando {
+  margin: 0 auto;
   position: relative;
   width: 15rem;
   border-radius: 50%;
   z-index: -1;
-  margin: auto;
 }
 
 .borda-girando::before {
