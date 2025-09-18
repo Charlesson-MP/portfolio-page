@@ -1,0 +1,30 @@
+[
+    {
+        "name": "HTML",
+        "label_path": "./src/images/html-logo.png",
+        "label_alt": "Logo do html",
+        "label_title": "Hypertext Markup Language",
+        "progress_value": "85"
+    },
+    {
+        "name": "CSS",
+        "label_path": "./src/images/CSS-logo.png",
+        "label_alt": "Logo do CSS",
+        "label_title": "Cascading Style Sheets",
+        "progress_value": "80"
+    },
+    {
+        "name": "JavaScript",
+        "label_path": "./src/images/js-logo.png",
+        "label_alt": "Logo do javascript",
+        "label_title": "Linguagem de programação para web",
+        "progress_value": "75"
+    },
+    {
+        "name": "Git",
+        "label_path": "./src/images/git-logo.png",
+        "label_alt": "Logo do git",
+        "label_title": "Sistema de versionamento de código",
+        "progress_value": "55"
+    }
+]
