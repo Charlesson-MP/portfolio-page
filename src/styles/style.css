@@ -149,6 +149,22 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.cursor::after {
+  opacity: 0;
+  content: '|';
+  border-left: 2px solid rgb(255, 255, 255);
+  color: transparent;
+  vertical-align: middle;
+  font-size: 2rem;
+  animation: piscar .5s infinite;
+}
+
+@keyframes piscar {
+  to {
+    opacity: 1;
+  }
+}
+
 .home .text {
   max-width: 30rem;
   margin: auto;
