@@ -63,6 +63,46 @@ async function loadData(url) {
     return data;
 }
 
+function createCardSkill(skillName, labelPath, labelAlt, labelTitle, progressValue) {
+    const skillCard = document.createElement('div');
+    skillCard.classList.add('skill');
+
+    const skillTitle = document.createElement('h3');
+    skillTitle.textContent = skillName;
+
+    const skillLabel = document.createElement('img');
+    skillLabel.src = labelPath;
+    skillLabel.alt = labelAlt;
+    skillLabel.title = labelTitle;
+
+    const progressBar = document.createElement('progress');
+    progressBar.value = progressValue;
+    progressBar.max = 100;
+    progressBar.title = `${progressValue}%`;
+
+    skillCard.append(skillTitle, skillLabel, progressBar);
+
+    return skillCard;
+}
+
+async function showSkills() {
+    try {
+        const skills = await loadData('./src/data/skills.json');
+
+        skills.forEach(skill => {
+            const skillCard = createCardSkill(skill.name, skill.label_path, skill.label_alt, skill.label_title, skill.progress_value);
+
+            skillsBoard.appendChild(skillCard);
+        });
+    }catch(error) {
+        console.error('Erro ao carregar skills:', error);
+    }
+
+    updateCarousel('skill');
+};
+
+showSkills();
+
 function createCardProject(coverPath, altImg, title, description, linkPage, linkRepository) {
     const projectCard = document.createElement('div');
     projectCard.classList.add('project');
