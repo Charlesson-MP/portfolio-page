@@ -4,6 +4,11 @@ const btnHome = document.getElementById("btnHome");
 const btnAbout = document.getElementById("btnAbout");
 const btnSkills = document.getElementById("btnSkills");
 const btnProjects = document.getElementById("btnProjects");
+
+const spnTexto = document.querySelector('.cursor');
+const texto = 'Desenvolvedor front-end';
+let i = 0, j = texto.length - 1, apagando = false;
+
 const projectsBoard = document.querySelector('.projects-board');
 const btnPrevProject = document.querySelector('.btnPrevProject');
 const btnNextProject = document.querySelector('.btnNextProject');
@@ -24,6 +29,25 @@ btnMenu.addEventListener("click", abrirFecharMenu);
 btnHome.addEventListener("click", abrirFecharMenu);
 btnAbout.addEventListener("click", abrirFecharMenu);
 btnSkills.addEventListener("click", abrirFecharMenu);
+
+function type() {
+    if (!apagando) {
+        spnTexto.textContent += texto[i];
+        i++;
+        if(i === texto.length) apagando = true;
+    }else {
+        spnTexto.textContent = texto.slice(0, j);
+        j--;
+        if(j < 0) {
+            i = 0;
+            j = texto.length - 1;
+            apagando = false;                  
+        }
+    }
+    setTimeout(type, 200);
+}
+
+type();
 
 document.addEventListener("click", (evt) => {
     const clickForaDoMenu = getComputedStyle(menuList).display === "flex" && !menuList.contains(evt.target) && evt.target !== btnMenu;
